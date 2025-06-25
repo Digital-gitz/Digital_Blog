@@ -8,7 +8,7 @@ LANDING_BUTTON = "Click to steal some👆"
 # (Optional) Site description on landing page
 LANDING_DESCRIPTION = "I have nothing but intelligence."
 # (REQUIRED) The Markdown page linked to landing page button (e.g. put home for ./home.md)
-LANDING_PAGE = "./home.md"
+LANDING_PAGE = "home"
 # (Optional) Site title on landing page
 LANDING_TITLE = "I love obsidian-zola! 💖"
 PYTHON_VERSION = "3.8"
@@ -17,12 +17,33 @@ REPO_URL = "https://github.com/Digital-gitz/Digital_Blog"
 # (Optional) Site title in navbar
 SITE_TITLE = "Someone's Second 🧠"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
-SITE_TITLE_TAB = ""
+SITE_TITLE_TAB = "title tab"
 # (REQUIRED) Netlify site URL
 SITE_URL = "a-digital-blog.netlify.app"
 # (Optional) Site Timezone
 TIMEZONE = "Asia/Hong_Kong"
 ZOLA_VERSION = "0.15.2"
+
+# [[plugins]]
+# package = "netlify-plugin-submit-sitemap"
+# [plugins.inputs]
+
+# The base url of your site (optional, default = main URL set in Netlify)
+# baseUrl = ""
+
+# Path to the sitemap URL (optional, default = /sitemap.xml)
+# sitemapPath = "/sitemap.xml"
+
+# Time in seconds to not submit the sitemap after successful submission
+# ignorePeriod = 0
+
+# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+providers = [
+  "google",
+  "bing",
+  "yandex",
+]
+
 # (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
 SORT_BY = "title"
 # (Optional) Google Analytics Measurement ID
