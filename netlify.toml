@@ -13,15 +13,15 @@ LANDING_PAGE = "home"
 LANDING_TITLE = "I love obsidian-zola! 💖"
 PYTHON_VERSION = "3.8"
 # (REQUIRED) Site repo URL
-REPO_URL = "https://github.com/ppeetteerrs/obsidian-zola"
+REPO_URL = "https://github.com/Digital-gitz/Digital_Blog"
 # (Optional) Site title in navbar
 SITE_TITLE = "Someone's Second 🧠"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
 SITE_TITLE_TAB = ""
 # (REQUIRED) Netlify site URL
-SITE_URL = ""
+SITE_URL = "a-digital-blog.netlify.app"
 # (Optional) Site Timezone
-TIMEZONE = "Eastern Time Zone"
+TIMEZONE = "US East Cost"
 ZOLA_VERSION = "0.15.2"
 # (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
 SORT_BY = "title"
@@ -41,35 +41,36 @@ FOOTER = ""
 ROOT_SECTION_NAME = "main"
 # (Optional) visjs graph options. Can remove if desired.
 GRAPH_OPTIONS = """
-        {
-        	nodes: {
-        		shape: "dot",
-        		color: isDark() ? "#8c8e91" : "#dee2e6",
-        		font: {
-        			face: "Inter",
-        			color: isDark() ? "#c9cdd1" : "#616469",
-        			strokeColor: isDark() ? "#c9cdd1" : "#616469",
-        		},
-        		scaling: {
-        			label: {
-        				enabled: true,
-        			},
-        		},
-        	},
-        	edges: {
-        		color: { inherit: "both" },
-        		width: 0.8,
-        		smooth: {
-        			type: "continuous",
-        		},
-        		hoverWidth: 4,
-        	},
-        	interaction: {
-        		hover: true,
-        	},
-        	height: "100%",
-        	width: "100%",
-        	physics: {
-        		solver: "repulsion",
-        	},
-        }
+{
+	nodes: {
+		shape: "dot",
+		color: isDark() ? "#8c8e91" : "#dee2e6",
+		font: {
+			face: "Inter",
+			color: isDark() ? "#c9cdd1" : "#616469",
+			strokeColor: isDark() ? "#c9cdd1" : "#616469",
+		},
+		scaling: {
+			label: {
+				enabled: true,
+			},
+		},
+	},
+	edges: {
+		color: { inherit: "both" },
+		width: 0.8,
+		smooth: {
+			type: "continuous",
+		},
+		hoverWidth: 4,
+	},
+	interaction: {
+		hover: true,
+	},
+	height: "100%",
+	width: "100%",
+	physics: {
+		solver: "repulsion",
+	},
+}
+"""
