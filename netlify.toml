@@ -1,5 +1,5 @@
 [build]
-command = "rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true && git clone https://github.com/Digital-gitz/Digital_Blog __site && __site/run.sh"
+command = "rm -rf __obsidian __site && mkdir __obsidian && find . -maxdepth 1 ! -name '__obsidian' ! -name '__site' ! -name '.' ! -name 'netlify.toml' -exec mv {} __obsidian/ \\; && git clone https://github.com/Digital-gitz/Digital_Blog.git __site && __site/run.sh"
 publish = "public"
 
 [build.environment]
